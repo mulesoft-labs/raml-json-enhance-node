@@ -67,7 +67,7 @@ class RamlJsonEnhancer {
   writeFile(data, file) {
     return new Promise((resolve, reject) => {
       fs.writeFile(file, data, function(err) {
-        if(err) {
+        if (err) {
           return reject(err);
         }
         resolve(data);
@@ -235,7 +235,8 @@ class RamlJsonEnhancer {
    * The canonical form computes inheritance and pushes unions to the top
    * level of the type structure of an expanded RAML type.
    *
-   * More info: https://github.com/raml-org/raml-parser-toolbelt/tree/master/tools/datatype-expansion
+   * More info:
+   * https://github.com/raml-org/raml-parser-toolbelt/tree/master/tools/datatype-expansion
    *
    * @param {Object} types A map of RAML types
    * @return {Promise} Resolved to expanded canonical form of RAML types.

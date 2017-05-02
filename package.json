@@ -1,13 +1,13 @@
 {
   "name": "raml-json-enhance-node",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "Apache-2.0 OR CC-BY-4.0",
   "description": "A RAML's JSON enhancer node package for the API Console",
   "engines": {
     "node": ">=4"
   },
   "private": false,
-  "main": "enhencer.js",
+  "main": "main.js",
   "author": "The Advanced REST client authors <arc@mulesoft.com>",
   "scripts": {
     "test": "mocha 'test/*.test.js' --reporter progress"
@@ -23,7 +23,8 @@
   "dependencies": {
     "datatype-expansion": "^0.1.1",
     "install": "^0.8.8",
-    "npm": "^4.4.4"
+    "npm": "^4.4.4",
+    "raml-1-parser": "^1.1.20"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -1,7 +1,7 @@
 'use strict';
 
 const parser = require('raml-1-parser');
-const RamlJsonEnhancer = require('..').RamlJsonEnhancer;
+const {RamlJsonEnhancer} = require('..');
 
 class TestRamlLoader {
   constructor() {

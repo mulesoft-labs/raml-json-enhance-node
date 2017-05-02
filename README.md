@@ -47,32 +47,23 @@ enhancer.enhance(ramlJsonOutput.specification)
 .catch((cause) => console.error(cause));
 ```
 
-### With RAML parser
+### From RAML file
 
 ```javascript
-const parser = require('raml-1-parser');
-const {RamlJsonEnhancer} = require('raml-json-enhance-node');
+const {RamlJsonGenerator} = require('raml-json-enhance-node');
 
-parser.loadApi(urlToRaml)
-.then(api => {
-  return api.expand(true)
-  .toJSON({
-    dumpSchemaContents: false,
-    rootNodeDetails: true,
-    serializeMetadata: false
-  }).specification;
-  // Assuming you don't care about errors
-})
-.then(spec => {
-  const enhancer = new RamlJsonEnhancer();
-  return enhancer.enhance(spec);
-})
+const enhancer = new RamlJsonGenerator('./api.raml', {
+  prettyPrint: true
+});
+enhancer.generate()
 .then((json) => {
-  console.log(json);
+  console.log(json); // formatted JSON with `prettyPrint` option.
 });
 ```
 
 ### Saving output to file
+
+#### Enhancer only
 
 ```javascript
 const {RamlJsonEnhancer} = require('raml-json-enhance-node');
@@ -84,4 +75,18 @@ enhancer.enhanceToFile(ramlJsonOutput.specification, './api.json')
   console.log(json);
 })
 .catch((cause) => console.error(cause));
+```
+
+#### From RAML file
+
+```javascript
+const {RamlJsonGenerator} = require('raml-json-enhance-node');
+
+const enhancer = new RamlJsonGenerator('./api.raml', {
+  _targetFile: './api.json'
+});
+enhancer.generate()
+.then(() => {
+  // The file is saved now.
+});
 ```

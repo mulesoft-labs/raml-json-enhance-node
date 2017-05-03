@@ -86,7 +86,8 @@ const enhancer = new RamlJsonGenerator('./api.raml', {
   output: './api.json'
 });
 enhancer.generate()
-.then(() => {
+.then((json) => {
   // The file is saved now.
+  console.log(json); // And JS object is available to use.
 });
 ```

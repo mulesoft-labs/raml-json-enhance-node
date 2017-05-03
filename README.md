@@ -83,7 +83,7 @@ enhancer.enhanceToFile(ramlJsonOutput.specification, './api.json')
 const {RamlJsonGenerator} = require('raml-json-enhance-node');
 
 const enhancer = new RamlJsonGenerator('./api.raml', {
-  _targetFile: './api.json'
+  output: './api.json'
 });
 enhancer.generate()
 .then(() => {

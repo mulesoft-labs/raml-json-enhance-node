@@ -21,6 +21,7 @@
     "email": "arc@mulesoft.com"
   },
   "dependencies": {
+    "@types/es6-promise": "0.0.32",
     "datatype-expansion": "^0.1.1",
     "install": "^0.8.8",
     "npm": "^4.4.4",

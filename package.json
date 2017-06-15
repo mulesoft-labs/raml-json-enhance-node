@@ -1,6 +1,6 @@
 {
   "name": "raml-json-enhance-node",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "Apache-2.0 OR CC-BY-4.0",
   "description": "A RAML's JSON enhancer node package for the API Console",
   "engines": {
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/advanced-rest-client/raml-json-enhance-node.git"
+    "url": "git://github.com/mulesoft-labs/raml-json-enhance-node.git"
   },
   "bugs": {
-    "url": "https://github.com/advanced-rest-client/raml-json-enhance-node/issues",
+    "url": "https://github.com/mulesoft-labs/raml-json-enhance-node/issues",
     "email": "arc@mulesoft.com"
   },
   "dependencies": {

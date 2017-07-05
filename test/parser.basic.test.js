@@ -6,17 +6,13 @@ const assert = require('chai').assert;
 describe('raml-json-enhance-node', () => {
   describe('parser basic', () => {
     var json;
-    before(function(done) {
+    before(function() {
       this.timeout(20000);
       var apiUrl = 'https://cdn.rawgit.com/advanced-rest-client/raml-example-api/master/api.raml';
       const enhancer = new RamlJsonGenerator(apiUrl);
-      enhancer.generate()
+      return enhancer.generate()
       .then((data) => {
         json = data;
-        done();
-      })
-      .catch((cause) => {
-        done(new Error(cause.message));
       });
     });
 

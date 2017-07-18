@@ -1,0 +1,32 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  line:
+    type: string
+    example: "177 Ashland Ave."
+    description: |
+      Address first line.
+  city:
+    type: string
+    example: "Chicago"
+    description: |
+      City.
+  district:
+    type: string
+    description: |
+      District.
+  state:
+    type: string
+    enum: [ AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY ]
+    description: |
+      State.
+  postalCode:
+    type: string
+    example: "606443"
+    description: |
+      Postal code.
+  country:
+    type: string
+    example: "United States of America"
+    description: |
+      Country.

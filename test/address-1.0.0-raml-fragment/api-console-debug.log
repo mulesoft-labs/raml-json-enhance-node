@@ -1,8 +1,0 @@
-{"meta":"","level":"error","message":"","timestamp":"2017-07-17T23:16:19.653Z"}
-{"level":"error","message":"\u001b[31mapi.expand is not a function\u001b[39m","timestamp":"2017-07-17T23:16:19.654Z"}
-{"level":"error","message":"\u001b[31mTypeError: api.expand is not a function\n    at parser.loadApi.then.api (/usr/local/lib/node_modules/api-console-cli/node_modules/raml-json-enhance-node/lib/json-generator.js:73:18)\u001b[39m","timestamp":"2017-07-17T23:16:19.656Z"}
-{"meta":"","level":"error","message":"","timestamp":"2017-07-17T23:16:19.656Z"}
-{"meta":"","level":"error","message":"","timestamp":"2017-07-17T23:18:28.799Z"}
-{"level":"error","message":"\u001b[31mapi.expand is not a function\u001b[39m","timestamp":"2017-07-17T23:18:28.801Z"}
-{"level":"error","message":"\u001b[31mTypeError: api.expand is not a function\n    at parser.loadApi.then.api (/usr/local/lib/node_modules/api-console-cli/node_modules/raml-json-enhance-node/lib/json-generator.js:73:18)\u001b[39m","timestamp":"2017-07-17T23:18:28.804Z"}
-{"meta":"","level":"error","message":"","timestamp":"2017-07-17T23:18:28.804Z"}

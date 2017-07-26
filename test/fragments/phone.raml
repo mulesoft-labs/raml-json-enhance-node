@@ -1,0 +1,15 @@
+#%RAML 1.0 DataType
+
+type: object
+displayName: Phone
+properties:
+  phoneNumber:
+    type: string
+    example: "312-999-9654"
+    description: |
+      A free form block of text, which may include newlines (“\n”). Only required if addresses are included.
+  type:
+    type: string
+    enum: [ home, work, other ]
+    description: |
+      Must be “home”, “work”, or “other”. Only required if addresses are included.

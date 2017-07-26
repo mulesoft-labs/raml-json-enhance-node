@@ -10,7 +10,7 @@
   "main": "main.js",
   "author": "The Advanced REST client authors <arc@mulesoft.com>",
   "scripts": {
-    "test": "mocha 'test/*.test.js' --reporter progress"
+    "test": "mocha 'test/*.test.js'"
   },
   "repository": {
     "type": "git",
@@ -21,14 +21,13 @@
     "email": "arc@mulesoft.com"
   },
   "dependencies": {
-    "datatype-expansion": "^0.1.1",
     "install": "^0.8.8",
     "npm": "^4.4.4",
-    "raml-1-parser": "^1.1.20"
+    "raml-1-parser": "^1.1.20",
+    "raml2obj": "github:advanced-rest-client/raml2obj"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "raml-1-parser": "^1.1.19"
+    "mocha": "^3.2.0"
   }
 }

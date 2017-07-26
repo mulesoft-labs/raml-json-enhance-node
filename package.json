@@ -29,5 +29,14 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
-  }
+  },
+  "keywords": [
+    "RAML",
+    "raml2obj",
+    "enhancer"
+  ],
+  "files": [
+    "lib",
+    "main.js"
+  ]
 }

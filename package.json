@@ -1,10 +1,10 @@
 {
   "name": "raml-json-enhance-node",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "license": "Apache-2.0 OR CC-BY-4.0",
   "description": "A RAML's JSON enhancer node package for the API Console",
   "engines": {
-    "node": ">=6.4.0"
+    "node": ">=5.12.0"
   },
   "private": false,
   "main": "main.js",

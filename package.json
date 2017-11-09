@@ -21,8 +21,6 @@
     "email": "arc@mulesoft.com"
   },
   "dependencies": {
-    "install": "^0.8.8",
-    "npm": "^4.4.4",
     "raml-1-parser": "^1.1.20",
     "raml2obj": "github:advanced-rest-client/raml2obj"
   },

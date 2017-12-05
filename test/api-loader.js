@@ -33,7 +33,7 @@ class TestRamlLoader {
   }
 
   arcExampleApi() {
-    var url = this.urls.drive;
+    var url = this.urls['arc-example'];
     return this.getJson(url);
   }
 }

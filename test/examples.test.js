@@ -4,12 +4,12 @@ const TestRamlLoader = require('./api-loader').TestRamlLoader;
 const assert = require('chai').assert;
 
 describe('raml-json-enhance-node', () => {
-  describe('basic tests', () => {
+  describe('Examples tests', () => {
     var json;
     before(function() {
       this.timeout(20000);
       const loader = new TestRamlLoader();
-      return loader.arcExampleApi()
+      return loader.driveApi()
       .then(function(spec) {
         json = spec;
       });

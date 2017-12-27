@@ -1,0 +1,29 @@
+#%RAML 1.0
+baseUri: https://mocksvc.qax.mulesoft.com/mocks/236adf03-9512-4b78-8bd0-de68259f2289 #
+title: Test API
+version: v1x
+
+types:
+  response-type-3:
+    properties:
+      meta?: !include inline-types/lib/metadata-type.raml
+      data?:
+      errors?:
+        type: array
+        items: !include inline-types/lib/message-type.raml
+
+/test:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: response-type-3
+
+/test2:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: !include inline-types/lib/response-type.raml

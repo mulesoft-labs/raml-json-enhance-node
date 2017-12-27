@@ -7,7 +7,8 @@ class TestRamlLoader {
   constructor() {
     this.urls = {
       'drive': './test/drive-raml-api-v2/api.raml',
-      'arc-example': 'https://cdn.rawgit.com/advanced-rest-client/raml-example-api/master/api.raml'
+      'arc-example': 'https://cdn.rawgit.com/advanced-rest-client/raml-example-api/master/api.raml',
+      'inline-types': './test/inline-types.raml'
     };
   }
 
@@ -34,6 +35,11 @@ class TestRamlLoader {
 
   arcExampleApi() {
     var url = this.urls['arc-example'];
+    return this.getJson(url);
+  }
+
+  inlineTypes() {
+    var url = this.urls['inline-types'];
     return this.getJson(url);
   }
 }

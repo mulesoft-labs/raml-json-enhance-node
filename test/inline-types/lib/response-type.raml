@@ -1,0 +1,8 @@
+#%RAML 1.0 DataType
+properties:
+  meta?:
+    type: !include metadata-type.raml
+  data?: 
+  errors?:
+    type: array
+    items: !include message-type.raml

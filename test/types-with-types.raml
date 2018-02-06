@@ -1,0 +1,26 @@
+#%RAML 1.0
+
+title: Type Test
+version: v1
+baseUri: http://{hostname}/api/{version}
+baseUriParameters:
+  hostname:
+    description: the hostname
+mediaType: application/json
+
+types:
+  myType:
+    type: object
+    properties:
+      a: string
+      b?: string
+      type:
+        type: string
+
+/types:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: myType

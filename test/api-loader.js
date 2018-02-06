@@ -8,7 +8,8 @@ class TestRamlLoader {
     this.urls = {
       'drive': './test/drive-raml-api-v2/api.raml',
       'arc-example': 'https://cdn.rawgit.com/advanced-rest-client/raml-example-api/master/api.raml',
-      'inline-types': './test/inline-types.raml'
+      'inline-types': './test/inline-types.raml',
+      'types-with-types': './test/types-with-types.raml'
     };
   }
 
@@ -40,6 +41,11 @@ class TestRamlLoader {
 
   inlineTypes() {
     var url = this.urls['inline-types'];
+    return this.getJson(url);
+  }
+
+  typesWithTypes() {
+    var url = this.urls['types-with-types'];
     return this.getJson(url);
   }
 }

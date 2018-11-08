@@ -21,12 +21,12 @@
     "email": "arc@mulesoft.com"
   },
   "dependencies": {
-    "raml-1-parser": "^1.1.20",
-    "raml2obj": "github:advanced-rest-client/raml2obj#6.1.2"
+    "raml-1-parser": "1.1.48",
+    "raml2obj": "github:advanced-rest-client/raml2obj#6.2.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^5.2.0"
   },
   "keywords": [
     "RAML",

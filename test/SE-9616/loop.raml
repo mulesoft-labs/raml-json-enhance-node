@@ -1,0 +1,17 @@
+#%RAML 1.0
+version: v1
+title: loop
+
+types: 
+  product: !include product.raml
+
+/hello:
+  get:
+    headers: 
+      type: product
+    responses:
+      200: 
+        body: 
+          application/json:
+            example: {"hello":1}
+       

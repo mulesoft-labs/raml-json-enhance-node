@@ -2,7 +2,7 @@
 const TestRamlLoader = require('./api-loader').TestRamlLoader;
 const assert = require('chai').assert;
 
-describe('raml2obj', () => {
+describe('raml-json-enhance-node', () => {
   describe('inline-types.raml', () => {
 
     let response;
